@@ -27,7 +27,7 @@ namespace WebServiceDemo
 
         private void Window_Initialized(object sender, EventArgs e)
         {
-            // Populate Comboboxes with Currency Codes
+            // Populate Comboboxes with Temperature Scales
             ComboBoxFrom.ItemsSource = Enum.GetValues(typeof(WebServiceXConvertTemperature.TemperatureUnit));
             ComboBoxTo.ItemsSource = Enum.GetValues(typeof(WebServiceXConvertTemperature.TemperatureUnit));
         }
@@ -40,6 +40,7 @@ namespace WebServiceDemo
                 (WebServiceXConvertTemperature.TemperatureUnit)Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxFrom.SelectedItem.ToString()),
                 (WebServiceXConvertTemperature.TemperatureUnit)Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxTo.SelectedItem.ToString()));
 
+            
             TextFieldTo.Text = Convert.ToString(result);
         }
     }

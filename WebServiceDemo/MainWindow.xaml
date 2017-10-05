@@ -8,13 +8,12 @@
         Title="Web Service Demo" Height="209.84" Width="297.54" Initialized="Window_Initialized">
     <Grid>
         <Label x:Name="LabelFrom" Content="From:" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Width="59"/>
-        <ComboBox x:Name="ComboBoxFrom" HorizontalAlignment="Left" Margin="69,30,0,0" VerticalAlignment="Top" Width="90"/>
+        <ComboBox x:Name="ComboBoxFrom" HorizontalAlignment="Left" Margin="55,30,0,0" VerticalAlignment="Top" Width="104"/>
         <TextBox x:Name="TextFieldFrom" HorizontalAlignment="Left" Height="23" Margin="175,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
         <Label x:Name="LabelFrom_Copy" Content="To:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="59"/>
-        <ComboBox x:Name="ComboBoxTo" HorizontalAlignment="Left" Margin="69,68,0,0" VerticalAlignment="Top" Width="90"/>
+        <ComboBox x:Name="ComboBoxTo" HorizontalAlignment="Left" Margin="55,68,0,0" VerticalAlignment="Top" Width="104"/>
         <TextBox x:Name="TextFieldTo" HorizontalAlignment="Left" Height="23" Margin="175,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" IsEnabled="False"/>
         <Button x:Name="ButtonConvert" Content="Convert" HorizontalAlignment="Left" Margin="175,112,0,0" VerticalAlignment="Top" Width="92" Click="ButtonConvert_Click"/>
         <StatusBar x:Name="StatusBar" HorizontalAlignment="Left" Height="24" Margin="10,145,0,0" VerticalAlignment="Top" Width="270"/>
-
     </Grid>
 </Window>
