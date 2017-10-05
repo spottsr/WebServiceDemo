@@ -34,13 +34,23 @@ namespace WebServiceDemo
 
         private void ButtonConvert_Click(object sender, RoutedEventArgs e)
         {
+            double temperature = 0;
+
             WebServiceXConvertTemperature.ConvertTemperatureSoapClient units = new WebServiceXConvertTemperature.ConvertTemperatureSoapClient("ConvertTemperatureSoap12");
 
-            double result = units.ConvertTemp(Convert.ToDouble(TextFieldFrom.Text),
+            try
+            {
+                temperature = Convert.ToDouble(TextFieldFrom.Text);
+            }
+            catch (System.FormatException)
+            {
+                StatusBarTextBlock.Text = "Temperature must be a number.";
+            }
+
+            double result = units.ConvertTemp(temperature,
                 (WebServiceXConvertTemperature.TemperatureUnit)Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxFrom.SelectedItem.ToString()),
                 (WebServiceXConvertTemperature.TemperatureUnit)Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxTo.SelectedItem.ToString()));
 
-            
             TextFieldTo.Text = Convert.ToString(result);
         }
     }
