@@ -1,0 +1,20 @@
+﻿<Window x:Class="WebServiceDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebServiceDemo"
+        mc:Ignorable="d"
+        Title="Web Service Demo" Height="209.84" Width="297.54" Initialized="Window_Initialized">
+    <Grid>
+        <Label x:Name="LabelFrom" Content="From:" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Width="59"/>
+        <ComboBox x:Name="ComboBoxFrom" HorizontalAlignment="Left" Margin="69,30,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="TextFieldFrom" HorizontalAlignment="Left" Height="23" Margin="175,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="LabelFrom_Copy" Content="To:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="59"/>
+        <ComboBox x:Name="ComboBoxTo" HorizontalAlignment="Left" Margin="69,68,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="TextFieldTo" HorizontalAlignment="Left" Height="23" Margin="175,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" IsEnabled="False"/>
+        <Button x:Name="ButtonConvert" Content="Convert" HorizontalAlignment="Left" Margin="175,112,0,0" VerticalAlignment="Top" Width="92" Click="ButtonConvert_Click"/>
+        <StatusBar x:Name="StatusBar" HorizontalAlignment="Left" Height="24" Margin="10,145,0,0" VerticalAlignment="Top" Width="270"/>
+
+    </Grid>
+</Window>
