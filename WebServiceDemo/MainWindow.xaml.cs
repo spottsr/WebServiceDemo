@@ -48,8 +48,8 @@ namespace WebServiceDemo
             }
 
             double result = units.ConvertTemp(temperature,
-                (WebServiceXConvertTemperature.TemperatureUnit)Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxFrom.SelectedItem.ToString()),
-                (WebServiceXConvertTemperature.TemperatureUnit)Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxTo.SelectedItem.ToString()));
+                (WebServiceXConvertTemperature.TemperatureUnit) Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxFrom.SelectedItem.ToString()),
+                (WebServiceXConvertTemperature.TemperatureUnit) Enum.Parse(typeof(WebServiceXConvertTemperature.TemperatureUnit), ComboBoxTo.SelectedItem.ToString()));
 
             TextFieldTo.Text = Convert.ToString(result);
         }
